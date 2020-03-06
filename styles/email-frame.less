@@ -226,8 +226,12 @@ iframe {
 
 .ignore-in-parent-frame {
 	body {
-		filter: invert(90%) hue-rotate(182deg);
+		color: @arc-dark;
+		filter: invert(90%) hue-rotate(180deg);
 		overflow: hidden !important;
+	}
+	img {
+		filter: invert(100%) hue-rotate(180deg);
 	}
 	blockquote {
 		border-color: lighten(@arc-dark, 20%) !important;
